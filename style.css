@@ -1,0 +1,53 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #fffcf4;
+	font: 14px Menlo, 'Andale Mono Regular', Inconsolata, Monaco, monospace;
+	line-height: 1.5;
+	margin-bottom: 100px;
+}
+
+em {
+	color: #999;
+}
+ul {
+	margin-bottom: 0;
+}
+section {
+	margin-bottom: 2em;
+}
+blockquote {
+	margin: 0;
+	margin-bottom: 1em;
+}
+
+.container {
+	margin: 0 auto;
+	width: 90%;
+	max-width: 40em;
+}
+
+.tagline-label{
+	font-style: italic;
+	font-weight: normal;
+	margin: 0 0 1em;
+}
+
+.contact {
+	text-align: center;
+}
+
+.header {
+	background-color: #fff688;
+	padding: 1em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+	.name {
+		margin-top: 0;
+		margin-bottom: 0;
+	}

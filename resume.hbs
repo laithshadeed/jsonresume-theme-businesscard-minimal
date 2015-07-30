@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+	<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+
+	<title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
+
+	<style>
+	{{{css}}}
+	</style>
+
+	</head>
+	<body>
+
+	<div id="resume">
+		{{#resume.basics}}
+			<div class="header">
+				<h1 class="name">{{name}}</h1>
+				<h4 class='tagline-label'>"{{label}}"</h4>
+			</div>
+
+			<section id="basics" class="container">
+				<div class="contact">
+
+					{{#if phone}}
+					<div class="phone">
+						<strong>Phone</strong><br>
+						{{phone}}
+					</div>
+					<br>
+					{{/if}}
+
+					{{#if email}}
+					<div class="email">
+						<strong>Email</strong><br>
+						{{email}}
+					</div>
+					<br>
+					{{/if}}
+
+					{{#if website}}
+					<div class="website">
+						<strong>Website</strong><br>
+						{{website}}
+					</div>
+					<br>
+					{{/if}}
+
+					{{! SOCIAL/PROFILES }}
+					{{#if profiles.length}}
+						{{#each profiles}}
+						<div class="profiles">
+
+							{{#if network}}
+								<strong class="network">
+									{{network}}
+								</strong><br>
+							{{/if}}
+
+							{{#if username}}
+								<div class="username">
+									{{#if url}}
+										<a href="{{url}}">{{username}}</a>
+									{{else}}
+										{{username}}
+									{{/if}}
+								</div>
+								<br>
+							{{/if}}
+
+
+						</div>
+						{{/each}}
+					{{/if}}
+				</div>
+
+
+				{{#if summary}}
+				<div class="summary">
+					<p>{{summary}}</p>
+				</div>
+				{{/if}}
+			</section>
+		{{/resume.basics}}
+	</div>
+
+
+	</body>
+</html>
