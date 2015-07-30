@@ -1,8 +1,8 @@
 {
-  "name": "jsonresume-theme-business-card",
+  "name": "jsonresume-theme-businesscard-minimal",
   "version": "0.0.2",
   "description": "Business card theme for JSON Resume",
-  "author": "JSON Resume Team",
+  "author": "Truong Nguyen",
   "repository": {
     "type": "git",
     "url": "https://github.com/jsonresume/jsonresume-theme-business-card"
