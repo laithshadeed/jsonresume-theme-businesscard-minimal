@@ -35,7 +35,7 @@
 					{{#if email}}
 					<div class="email">
 						<strong>Email</strong><br>
-						{{email}}
+            <a href="mailto:{{email}}">{{email}}</a>
 					</div>
 					<br>
 					{{/if}}
@@ -43,7 +43,11 @@
 					{{#if website}}
 					<div class="website">
 						<strong>Website</strong><br>
-						{{website}}
+            {{#if websiteTitle}}
+              <a href="{{website}}">{{websiteTitle}}</a>
+            {{else}}
+              <a href="{{website}}">{{website}}</a>
+            {{/if}}
 					</div>
 					<br>
 					{{/if}}
@@ -74,6 +78,19 @@
 						</div>
 						{{/each}}
 					{{/if}}
+
+          {{! Resume Types }}
+					{{#if resumes.length}}
+						<div class="resumes">
+						  <strong class="resume-style">
+							  Resume
+							</strong><br>
+						  {{#each resumes}}
+							  <a href="{{url}}">{{name}}</a>
+						  {{/each}}
+						</div>
+					{{/if}}
+
 				</div>
 
 
