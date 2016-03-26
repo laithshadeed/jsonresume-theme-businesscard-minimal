@@ -4,6 +4,7 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 
 	<title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
 
@@ -26,46 +27,34 @@
 
 					{{#if phone}}
 					<div class="phone">
-						<strong>Phone</strong><br>
-						{{phone}}
+            <strong>Phone</strong><br>
+            <div class="values">{{phone}}</div><br>
 					</div>
 					<br>
 					{{/if}}
 
 					{{#if email}}
 					<div class="email">
-						<strong>Email</strong><br>
-            <a href="mailto:{{email}}">{{email}}</a>
+            <strong>Email</strong><br>
+            <div class="values">{{email}}</div><br>
 					</div>
 					<br>
 					{{/if}}
 
 					{{! SOCIAL/PROFILES }}
-					{{#if profiles.length}}
-						{{#each profiles}}
-						<div class="profiles">
-
-							{{#if network}}
-								<strong class="network">
-									{{network}}
-								</strong><br>
-							{{/if}}
-
-							{{#if username}}
-								<div class="username">
-									{{#if url}}
-										<a href="{{url}}">{{username}}</a>
-									{{else}}
-										{{username}}
-									{{/if}}
-								</div>
-								<br>
-							{{/if}}
-
-
-						</div>
-						{{/each}}
-					{{/if}}
+          {{#if profiles.length}}
+						<div class="follow">
+              <strong class="network">Follow</strong><br>
+						  <div class="values">
+              {{#each profiles}}
+                <span class="username">
+                  <a href="{{url}}" target="_blank"><span class="fa fa-{{spaceToDash network}} fa-lg"></span></a>
+                </span>
+              {{/each}}
+              </div>
+            </div>
+            <br>
+          {{/if}}
 
           {{! Resume Types }}
 					{{#if resumes.length}}
@@ -73,9 +62,11 @@
 						  <strong class="resume-style">
 							  Resume
 							</strong><br>
+						  <div class="values">
 						  {{#each resumes}}
 							  <a href="{{url}}">{{name}}</a>
 						  {{/each}}
+              </div>
 						</div>
 					{{/if}}
 

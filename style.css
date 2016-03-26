@@ -47,11 +47,24 @@ blockquote {
 	text-align: center;
 }
 
-	.name {
-		margin-top: 0;
-		margin-bottom: 0;
-	}
+.name {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .summary {
 	text-align: center;
+}
+
+.values {
+  margin-top: 0.5em;
+}
+
+.username {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.phone, .email, .follow, .resumes, .summary {
+  height: 5em;
 }
