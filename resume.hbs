@@ -4,8 +4,6 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-
 	<title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
 
 	<style>
@@ -48,7 +46,7 @@
 						  <div class="values">
               {{#each profiles}}
                 <span class="username">
-                  <a href="{{url}}" target="_blank" rel="noopener"><span class="fa fa-{{spaceToDash network}} fa-lg"></span></a>
+                  <a href="{{url}}" target="_blank" rel="noopener"><span class="icons {{spaceToDash network}}"></span></a>
                 </span>
               {{/each}}
               </div>

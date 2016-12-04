@@ -65,6 +65,37 @@ blockquote {
   margin-right: 0.5em;
 }
 
+.username > a {
+  text-decoration: none;
+}
+
 .phone, .email, .follow, .resumes, .summary {
   height: 5em;
+}
+
+@font-face {
+  font-family: 'fontawesome';
+  src: url('./font/fontawesome.eot?63231571');
+  src: url('./font/fontawesome.eot?63231571#iefix') format('embedded-opentype'),
+       url('./font/fontawesome.woff?63231571') format('woff'),
+       url('./font/fontawesome.ttf?63231571') format('truetype'),
+       url('./font/fontawesome.svg?63231571#fontawesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.icons {
+  font-family: 'fontawesome';
+  font-size: 1.5em;
+}
+.twitter:before {
+  content: "\f099";
+}
+.github:before {
+  content: "\f09b";
+}
+.linkedin:before {
+  content: "\f0e1";
+}
+.stack-overflow:before {
+  content: "\f16c";
 }
