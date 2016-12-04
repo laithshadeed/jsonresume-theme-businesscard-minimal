@@ -48,7 +48,9 @@
 						  <div class="values">
               {{#each profiles}}
                 <span class="username">
-                  <a href="{{url}}" target="_blank"><span class="fa fa-{{spaceToDash network}} fa-lg"></span></a>
+                  <a href="{{url}}" target="_blank" rel="noopener">
+                    <span class="fa fa-{{spaceToDash network}} fa-lg"></span>
+                  </a>
                 </span>
               {{/each}}
               </div>
